@@ -7,7 +7,13 @@
 #
 
 
+
 class SetupController < NSWindowController
   attr_writer :path_to_root
   
+  def setRoot(sender)
+    @path_to_root.string
+  end
+
+
 end
