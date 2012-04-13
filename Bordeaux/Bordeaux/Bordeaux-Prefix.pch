@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Bordeaux' target in the 'Bordeaux' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif

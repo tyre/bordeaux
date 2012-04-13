@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'BordeauxImporter' target in the 'BordeauxImporter' project
+//
+
+#ifdef __OBJC__
+#endif

@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D31DEE21538A371005C56E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DEE11538A371005C56E6 /* Cocoa.framework */; };
+		1D31DEE41538A371005C56E6 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DEE31538A371005C56E6 /* MacRuby.framework */; };
+		1D31DEED1538A371005C56E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DEEB1538A371005C56E6 /* InfoPlist.strings */; };
+		1D31DEEF1538A371005C56E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D31DEEE1538A371005C56E6 /* main.m */; };
+		1D31DEF41538A371005C56E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DEF21538A371005C56E6 /* MainMenu.xib */; };
+		1D31DEF71538A371005C56E6 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DEF61538A371005C56E6 /* rb_main.rb */; };
+		1D31DEF91538A371005C56E6 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DEF81538A371005C56E6 /* AppDelegate.rb */; };
+		1D31DEFC1538A371005C56E6 /* Bordeaux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D31DEFA1538A371005C56E6 /* Bordeaux.xcdatamodeld */; };
+		1D31DF041538A371005C56E6 /* BordeauxImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DF011538A371005C56E6 /* BordeauxImporter.mdimporter */; };
+		1D31DF061538A371005C56E6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DF051538A371005C56E6 /* CoreServices.framework */; };
+		1D31DF081538A371005C56E6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DF071538A371005C56E6 /* CoreFoundation.framework */; };
+		1D31DF0A1538A371005C56E6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DF091538A371005C56E6 /* CoreData.framework */; };
+		1D31DF0C1538A371005C56E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31DF0B1538A371005C56E6 /* Foundation.framework */; };
+		1D31DF121538A371005C56E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DF101538A371005C56E6 /* InfoPlist.strings */; };
+		1D31DF141538A371005C56E6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D31DF131538A371005C56E6 /* main.c */; };
+		1D31DF161538A371005C56E6 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D31DF151538A371005C56E6 /* GetMetadataForFile.m */; };
+		1D31DF191538A371005C56E6 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D31DF181538A371005C56E6 /* MySpotlightImporter.m */; };
+		1D31DF281538BB34005C56E6 /* SetupController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1D31DF271538BB34005C56E6 /* SetupController.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D31DEE61538A371005C56E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D31DED41538A371005C56E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D31DEDC1538A371005C56E6;
+			remoteInfo = Bordeaux;
+		};
+		1D31DF021538A371005C56E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D31DED41538A371005C56E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D31DF001538A371005C56E6;
+			remoteInfo = BordeauxImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D31DEDD1538A371005C56E6 /* Bordeaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bordeaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D31DEE11538A371005C56E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1D31DEE31538A371005C56E6 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		1D31DEEA1538A371005C56E6 /* Bordeaux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bordeaux-Info.plist"; sourceTree = "<group>"; };
+		1D31DEEC1538A371005C56E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D31DEEE1538A371005C56E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D31DEF01538A371005C56E6 /* Bordeaux-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bordeaux-Prefix.pch"; sourceTree = "<group>"; };
+		1D31DEF31538A371005C56E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1D31DEF61538A371005C56E6 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		1D31DEF81538A371005C56E6 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		1D31DEFB1538A371005C56E6 /* Bordeaux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bordeaux.xcdatamodel; sourceTree = "<group>"; };
+		1D31DF011538A371005C56E6 /* BordeauxImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BordeauxImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D31DF051538A371005C56E6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		1D31DF071538A371005C56E6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1D31DF091538A371005C56E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1D31DF0B1538A371005C56E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D31DF0F1538A371005C56E6 /* BordeauxImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BordeauxImporter-Info.plist"; sourceTree = "<group>"; };
+		1D31DF111538A371005C56E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D31DF131538A371005C56E6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1D31DF151538A371005C56E6 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		1D31DF171538A371005C56E6 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		1D31DF181538A371005C56E6 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		1D31DF1A1538A371005C56E6 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		1D31DF1B1538A371005C56E6 /* BordeauxImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BordeauxImporter-Prefix.pch"; sourceTree = "<group>"; };
+		1D31DF271538BB34005C56E6 /* SetupController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SetupController.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D31DEDA1538A371005C56E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DEE21538A371005C56E6 /* Cocoa.framework in Frameworks */,
+				1D31DEE41538A371005C56E6 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D31DEFE1538A371005C56E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DF061538A371005C56E6 /* CoreServices.framework in Frameworks */,
+				1D31DF081538A371005C56E6 /* CoreFoundation.framework in Frameworks */,
+				1D31DF0A1538A371005C56E6 /* CoreData.framework in Frameworks */,
+				1D31DF0C1538A371005C56E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D31DED21538A371005C56E6 = {
+			isa = PBXGroup;
+			children = (
+				1D31DEE81538A371005C56E6 /* Bordeaux */,
+				1D31DF0D1538A371005C56E6 /* BordeauxImporter */,
+				1D31DEE01538A371005C56E6 /* Frameworks */,
+				1D31DEDE1538A371005C56E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D31DEDE1538A371005C56E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DEDD1538A371005C56E6 /* Bordeaux.app */,
+				1D31DF011538A371005C56E6 /* BordeauxImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D31DEE01538A371005C56E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DEE11538A371005C56E6 /* Cocoa.framework */,
+				1D31DEE31538A371005C56E6 /* MacRuby.framework */,
+				1D31DF051538A371005C56E6 /* CoreServices.framework */,
+				1D31DF071538A371005C56E6 /* CoreFoundation.framework */,
+				1D31DF091538A371005C56E6 /* CoreData.framework */,
+				1D31DF0B1538A371005C56E6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D31DEE81538A371005C56E6 /* Bordeaux */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DF271538BB34005C56E6 /* SetupController.rb */,
+				1D31DEF81538A371005C56E6 /* AppDelegate.rb */,
+				1D31DEFA1538A371005C56E6 /* Bordeaux.xcdatamodeld */,
+				1D31DEF11538A371005C56E6 /* Resources */,
+				1D31DEF51538A371005C56E6 /* Other Sources */,
+				1D31DEE91538A371005C56E6 /* Supporting Files */,
+			);
+			path = Bordeaux;
+			sourceTree = "<group>";
+		};
+		1D31DEE91538A371005C56E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DEEA1538A371005C56E6 /* Bordeaux-Info.plist */,
+				1D31DEEB1538A371005C56E6 /* InfoPlist.strings */,
+				1D31DEEE1538A371005C56E6 /* main.m */,
+				1D31DEF01538A371005C56E6 /* Bordeaux-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D31DEF11538A371005C56E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DEF21538A371005C56E6 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D31DEF51538A371005C56E6 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DEF61538A371005C56E6 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		1D31DF0D1538A371005C56E6 /* BordeauxImporter */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DF151538A371005C56E6 /* GetMetadataForFile.m */,
+				1D31DF171538A371005C56E6 /* MySpotlightImporter.h */,
+				1D31DF181538A371005C56E6 /* MySpotlightImporter.m */,
+				1D31DF1A1538A371005C56E6 /* Importer Read Me.txt */,
+				1D31DF0E1538A371005C56E6 /* Supporting Files */,
+			);
+			path = BordeauxImporter;
+			sourceTree = "<group>";
+		};
+		1D31DF0E1538A371005C56E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D31DF0F1538A371005C56E6 /* BordeauxImporter-Info.plist */,
+				1D31DF101538A371005C56E6 /* InfoPlist.strings */,
+				1D31DF131538A371005C56E6 /* main.c */,
+				1D31DF1B1538A371005C56E6 /* BordeauxImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		1D31DEE51538A371005C56E6 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 1D31DF241538A371005C56E6 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				1D31DEE71538A371005C56E6 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		1D31DEDC1538A371005C56E6 /* Bordeaux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D31DF211538A371005C56E6 /* Build configuration list for PBXNativeTarget "Bordeaux" */;
+			buildPhases = (
+				1D31DED91538A371005C56E6 /* Sources */,
+				1D31DEDA1538A371005C56E6 /* Frameworks */,
+				1D31DEDB1538A371005C56E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D31DF031538A371005C56E6 /* PBXTargetDependency */,
+			);
+			name = Bordeaux;
+			productName = Bordeaux;
+			productReference = 1D31DEDD1538A371005C56E6 /* Bordeaux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D31DF001538A371005C56E6 /* BordeauxImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D31DF1E1538A371005C56E6 /* Build configuration list for PBXNativeTarget "BordeauxImporter" */;
+			buildPhases = (
+				1D31DEFD1538A371005C56E6 /* Sources */,
+				1D31DEFE1538A371005C56E6 /* Frameworks */,
+				1D31DEFF1538A371005C56E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BordeauxImporter;
+			productName = BordeauxImporter;
+			productReference = 1D31DF011538A371005C56E6 /* BordeauxImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D31DED41538A371005C56E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1D31DED71538A371005C56E6 /* Build configuration list for PBXProject "Bordeaux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1D31DED21538A371005C56E6;
+			productRefGroup = 1D31DEDE1538A371005C56E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D31DEDC1538A371005C56E6 /* Bordeaux */,
+				1D31DEE51538A371005C56E6 /* Deployment */,
+				1D31DF001538A371005C56E6 /* BordeauxImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D31DEDB1538A371005C56E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DEED1538A371005C56E6 /* InfoPlist.strings in Resources */,
+				1D31DEF41538A371005C56E6 /* MainMenu.xib in Resources */,
+				1D31DEF71538A371005C56E6 /* rb_main.rb in Resources */,
+				1D31DEF91538A371005C56E6 /* AppDelegate.rb in Resources */,
+				1D31DF041538A371005C56E6 /* BordeauxImporter.mdimporter in Resources */,
+				1D31DF281538BB34005C56E6 /* SetupController.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D31DEFF1538A371005C56E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DF121538A371005C56E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D31DED91538A371005C56E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DEEF1538A371005C56E6 /* main.m in Sources */,
+				1D31DEFC1538A371005C56E6 /* Bordeaux.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D31DEFD1538A371005C56E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D31DF141538A371005C56E6 /* main.c in Sources */,
+				1D31DF161538A371005C56E6 /* GetMetadataForFile.m in Sources */,
+				1D31DF191538A371005C56E6 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D31DEE71538A371005C56E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D31DEDC1538A371005C56E6 /* Bordeaux */;
+			targetProxy = 1D31DEE61538A371005C56E6 /* PBXContainerItemProxy */;
+		};
+		1D31DF031538A371005C56E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D31DF001538A371005C56E6 /* BordeauxImporter */;
+			targetProxy = 1D31DF021538A371005C56E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D31DEEB1538A371005C56E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D31DEEC1538A371005C56E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D31DEF21538A371005C56E6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D31DEF31538A371005C56E6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1D31DF101538A371005C56E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D31DF111538A371005C56E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D31DF1C1538A371005C56E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1D31DF1D1538A371005C56E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1D31DF1F1538A371005C56E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BordeauxImporter/BordeauxImporter-Prefix.pch";
+				INFOPLIST_FILE = "BordeauxImporter/BordeauxImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		1D31DF201538A371005C56E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BordeauxImporter/BordeauxImporter-Prefix.pch";
+				INFOPLIST_FILE = "BordeauxImporter/BordeauxImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		1D31DF221538A371005C56E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bordeaux/Bordeaux-Prefix.pch";
+				INFOPLIST_FILE = "Bordeaux/Bordeaux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1D31DF231538A371005C56E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bordeaux/Bordeaux-Prefix.pch";
+				INFOPLIST_FILE = "Bordeaux/Bordeaux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1D31DF251538A371005C56E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1D31DF261538A371005C56E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D31DED71538A371005C56E6 /* Build configuration list for PBXProject "Bordeaux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D31DF1C1538A371005C56E6 /* Debug */,
+				1D31DF1D1538A371005C56E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D31DF1E1538A371005C56E6 /* Build configuration list for PBXNativeTarget "BordeauxImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D31DF1F1538A371005C56E6 /* Debug */,
+				1D31DF201538A371005C56E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D31DF211538A371005C56E6 /* Build configuration list for PBXNativeTarget "Bordeaux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D31DF221538A371005C56E6 /* Debug */,
+				1D31DF231538A371005C56E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D31DF241538A371005C56E6 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D31DF251538A371005C56E6 /* Debug */,
+				1D31DF261538A371005C56E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D31DEFA1538A371005C56E6 /* Bordeaux.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D31DEFB1538A371005C56E6 /* Bordeaux.xcdatamodel */,
+			);
+			currentVersion = 1D31DEFB1538A371005C56E6 /* Bordeaux.xcdatamodel */;
+			path = Bordeaux.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D31DED41538A371005C56E6 /* Project object */;
+}
